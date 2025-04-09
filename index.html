@@ -46,11 +46,22 @@
       text-decoration: none;
       color: inherit;
     }
+    #bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
   </style>
 </head>
 <body>
 
   <h1>Carb0n</h1>
+  <canvas id="bgCanvas"></canvas>
   <div class="game-grid" id="gameGrid">Loading games...</div>
 
   <script>
@@ -106,7 +117,14 @@
       document.getElementById('gameGrid').innerText = 'Failed to load games.';
       console.error(error);
     });
+  
 </script>
+
+  <script src="pipeline.js"></script>
+<script>
+  pipeline(document.getElementById('bgCanvas'));
+</script>
+
 
 
 </body>
