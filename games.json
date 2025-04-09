@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Cool Game",
+    "image": "https://example.com/coolgame.png",
+    "link": "https://example.com/play/coolgame"
+  },
+  {
+    "title": "Another Game",
+    "image": "https://example.com/anothergame.jpg",
+    "link": "https://example.com/play/anothergame"
+  }
+]
