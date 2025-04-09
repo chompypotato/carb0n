@@ -18,6 +18,15 @@
     "title": "10 Minutes Till Dawn",
     "image": "https://pizzapie.naveira.tk/images/games/10minstildawn-min.png",
     "link": "https://pizzapie.naveira.tk/assets/allgames/10minutestilldawn/"
+  },
+  {
+    "title": "2048",
+    "image": "https://pizzapie.naveira.tk/images/games/2048-min.png",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/2048"
+  },
+  {
+    "title": "2d Rocket League",
+    "image": "https://pizzapie.naveira.tk/images/games/2drocketleague-min.png",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/2drocketleague/"
   }
-  
 ]
