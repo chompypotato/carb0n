@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carb0n</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .game-card:hover {
+      transform: scale(1.03);
+    }
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .game-card-title {
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Carb0n</h1>
+  <div class="game-grid" id="gameGrid">Loading games...</div>
+
+  <script>
+    fetch('games.json')
+      .then(response => {
+        if (!response.ok) throw new Error("Couldn't load games.json");
+        return response.json();
+      })
+      .then(games => {
+        const gameGrid = document.getElementById('gameGrid');
+        gameGrid.innerHTML = '';
+
+        games.forEach(game => {
+          const card = document.createElement('a');
+          card.href = game.link;
+          card.target = '_blank';
+          card.className = 'game-card';
+
+          card.innerHTML = `
+            <img src="${game.image}" alt="${game.title}" />
+            <div class="game-card-title">${game.title}</div>
+          `;
+
+          gameGrid.appendChild(card);
+        });
+      })
+      .catch(error => {
+        document.getElementById('gameGrid').innerText = 'Failed to load games.';
+        console.error(error);
+      });
+  </script>
+
+</body>
+</html>
 
