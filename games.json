@@ -2,7 +2,7 @@
   {
     "title": "1",
     "image": "https://pizzapie.naveira.tk/images/games/1-min.png",
-    "link": "https://mt3k12.laviewddns.com/assets/allgames/1/"
+    "link": "https://pizzapie.naveira.tk/assets/allgames/1/"
   },
   {
     "title": "1 On 1 Soccer",
@@ -48,6 +48,16 @@
     "title": "Achievement Unlocked",
     "image": "https://pizzapie.naveira.tk/images/games/acievementunlocked-min.png",
     "link": "https://pizzapie.naveira.tk/assets/allgames/achievementunlocked/"
+  },
+  {
+    "title": "Achievement Unlocked 2",
+    "image": "https://pizzapie.naveira.tk/images/games/achievementunlocked2-min.png",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/achievementunlocked2/"
+  },
+  {
+    "title": "A Dark Room",
+    "image": "https://pizzapie.naveira.tk/images/games/adarkrooom-min.png",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/adarkroom/"
   }
   
 ]
