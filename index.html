@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carb0n</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.js" integrity="sha512-+maVcOki4j7Zo1VOqbhjH/fKV7iuE9WYMdhObx1ozxz2xu3qZMVCGHOAZKLKLksakyaWllQzafnLZSGBRl3lRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <style>
     html, body {
@@ -98,136 +97,7 @@
   <h1>Carb0n</h1>
   
   <div class="game-grid" id="gameGrid">Loading games...</div>
-
-  <script>
-  fetch('games.json')
-    .then(response => {
-      if (!response.ok) throw new Error("Couldn't load games.json");
-      return response.json();
-    })
-    .then(games => {
-      const gameGrid = document.getElementById('gameGrid');
-      gameGrid.innerHTML = '';
-
-      games.forEach(game => {
-        const card = document.createElement('div');
-        card.className = 'game-card';
-        card.style.cursor = 'pointer';
-
-        card.innerHTML = `
-          <img src="${game.image}" alt="${game.title}" />
-          <div class="game-card-title">${game.title}</div>
-        `;
-
-        card.addEventListener('click', () => {
-          try {
-            const win = window.open('about:blank', '_blank');
-            if (!win) throw new Error("Popup blocked");
-
-            const iframe = win.document.createElement('iframe');
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.src = game.link;
-
-            win.document.body.style.margin = "0";
-            win.document.body.style.height = "100vh";
-            win.document.body.appendChild(iframe);
-
-            win.document.title = '\u200B';
-
-            const link = win.document.createElement('link');
-            link.rel = 'icon';
-            link.href = 'blank.ico';
-            win.document.head.appendChild(link);
-          } catch (e) {
-            alert("Please allow popups and redirects for this site for the game to open.");
-          }
-        });
-
-        gameGrid.appendChild(card);
-      });
-    })
-    .catch(error => {
-      document.getElementById('gameGrid').innerText = 'Failed to load games.';
-      console.error(error);
-    });
-  
-</script>
-
-<script>
-    // goofy ahh comments
-    // Scene Setup
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000); // Adjusted FOV to zoom in
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-
-    // Lighting
-    const light = new THREE.PointLight(0xffffff, 1, 500);
-    light.position.set(0, 100, 100);
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0x555555)); // Ambient light
-
-    // Hexagonal Prism Geometry
-    const hexGeometry = new THREE.CylinderGeometry(10, 10, 20, 6); // Hexagonal prism
-    const hexMaterial = new THREE.MeshStandardMaterial({ color: 0x444444, flatShading: true });
-    const hexPrism = new THREE.Mesh(hexGeometry, hexMaterial);
-
-    // Create grid of hexagonal prisms
-    const grid = [];
-    const rows = 10;
-    const cols = 10;
-    const offset = 17; // Reduced the distance between hexagons
-
-    // Position the hexagonal grid
-    for (let i = 0; i < rows; i++) {
-      for (let j = 0; j < cols; j++) {
-        const hex = hexPrism.clone();
-        hex.position.x = (j * offset) + (i % 2) * (offset / 2); // Hexagonal offset
-        hex.position.y = 0;
-        hex.position.z = (i * offset);
-        scene.add(hex);
-        grid.push(hex);
-      }
-    }
-
-    // Calculate the center of the grid (roughly)
-    const centerX = (cols * offset) / 2;
-    const centerZ = (rows * offset) / 2;
-
-    // Camera positioning (zoomed in)
-    camera.position.set(centerX, 80, centerZ + 50);  // Moved the camera closer to the grid
-    camera.lookAt(new THREE.Vector3(centerX, 0, centerZ)); // Look at the center of the grid
-    camera.rotation.x = -Math.PI / 4; // Face down toward the grid
-
-    // Animation Loop
-    function animate() {
-      requestAnimationFrame(animate);
-
-      // Subtle Animation for Hexagonal Prisms
-      grid.forEach((hex, index) => {
-        hex.position.y = Math.sin(Date.now() * 0.001 + index) * 5; // Reduced movement for subtle effect
-      });
-
-      // Rendering the scene
-      renderer.render(scene, camera);
-    }
-
-    animate();
-
-    // Resize handling
-    window.addEventListener('resize', () => {
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-    });
-  </script>
-
-
-
-
+  <script src="js/load.js"></script>
 </body>
 </html>
 
