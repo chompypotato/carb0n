@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carb0n</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.js" integrity="sha512-+maVcOki4j7Zo1VOqbhjH/fKV7iuE9WYMdhObx1ozxz2xu3qZMVCGHOAZKLKLksakyaWllQzafnLZSGBRl3lRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js" integrity="sha512-lH/5/byfwH0bqySiiSINJJoEoWFEBGKgOwsnAlZZPviNJI1DDBVXjPHgEkM0fowfOp6NMBAN4ROAYjx+uEkEjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <style>
     html, body {
@@ -95,7 +94,6 @@
 </head>
   
 <body>
-  <div id="vanta-bg"></div>
 
   <h1>Carb0n</h1>
   
@@ -157,24 +155,78 @@
   
 </script>
 
-
-
 <script>
-VANTA.NET({
-  el: "#vanta-bg",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x808080,
-  backgroundColor: 0x0,
-  spacing: 20.00,
-  showDots: false
-})
-</script>
+    // goofy ahh comments
+    // Scene Setup
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000); // Adjusted FOV to zoom in
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Lighting
+    const light = new THREE.PointLight(0xffffff, 1, 500);
+    light.position.set(0, 100, 100);
+    scene.add(light);
+    scene.add(new THREE.AmbientLight(0x555555)); // Ambient light
+
+    // Hexagonal Prism Geometry
+    const hexGeometry = new THREE.CylinderGeometry(10, 10, 20, 6); // Hexagonal prism
+    const hexMaterial = new THREE.MeshStandardMaterial({ color: 0x444444, flatShading: true });
+    const hexPrism = new THREE.Mesh(hexGeometry, hexMaterial);
+
+    // Create grid of hexagonal prisms
+    const grid = [];
+    const rows = 10;
+    const cols = 10;
+    const offset = 17; // Reduced the distance between hexagons
+
+    // Position the hexagonal grid
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < cols; j++) {
+        const hex = hexPrism.clone();
+        hex.position.x = (j * offset) + (i % 2) * (offset / 2); // Hexagonal offset
+        hex.position.y = 0;
+        hex.position.z = (i * offset);
+        scene.add(hex);
+        grid.push(hex);
+      }
+    }
+
+    // Calculate the center of the grid (roughly)
+    const centerX = (cols * offset) / 2;
+    const centerZ = (rows * offset) / 2;
+
+    // Camera positioning (zoomed in)
+    camera.position.set(centerX, 80, centerZ + 50);  // Moved the camera closer to the grid
+    camera.lookAt(new THREE.Vector3(centerX, 0, centerZ)); // Look at the center of the grid
+    camera.rotation.x = -Math.PI / 4; // Face down toward the grid
+
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Subtle Animation for Hexagonal Prisms
+      grid.forEach((hex, index) => {
+        hex.position.y = Math.sin(Date.now() * 0.001 + index) * 5; // Reduced movement for subtle effect
+      });
+
+      // Rendering the scene
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    // Resize handling
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+  </script>
+
+
+
 
 </body>
 </html>
