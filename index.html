@@ -12,13 +12,15 @@
   padding: 0;
 }
 
-    body {
-      font-family:'Lucida Console', monospace;
-      background: #000000;
-      margin: 0;
-      padding: 20px;
-      
-    }
+body {
+  font-family: 'Lucida Console', monospace;
+  background: #000000;
+  margin: 0;
+  padding: 0; /* Removed padding */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+    
     h1 {
       text-align: center;
       font-size: 75px;
@@ -81,12 +83,13 @@
       color: inherit;
     }
    .container {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left:0;
-    }
+  position: fixed; /* Ensure it covers the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure content appears on top of the shader */
+}
     
   </style>
   <script src="js/fss.js"></script>
