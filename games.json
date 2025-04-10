@@ -93,6 +93,17 @@
     "title": "Astro Survivors",
     "image": "https://pizzapie.naveira.tk/images/games/astrosurvivor-min.jpg",
     "link": "https://pizzapie.naveira.tk/assets/allgames/astrosurvivor/"
+  },
+  {
+    "title": "A Small World Cup",
+    "image": "https://pizzapie.naveira.tk/images/games/asmallworldcup-min.jpg",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/asmallworldcup/"
+  },
+  {
+    "title": "Awesome Tanks",
+    "image": "https://pizzapie.naveira.tk/images/games/awsometanks-min.png",
+    "link": "https://pizzapie.naveira.tk/assets/allgames/AwesomeTanks2/"
   }
+  
   
 ]
