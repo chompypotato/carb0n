@@ -5,95 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carb0n</title>
   <link rel="icon" type="image/x-icon" href="logo.png">
-
+  <link rel="stylesheet" href="main.css">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--fun-->
 
-  <style>
-    html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Lucida Console', monospace;
-  background: #000000;
-  margin: 0;
-}
-
-    
-    h1 {
-      text-align: center;
-      font-size: 75px;
-      color: grey;
-    }
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .game-card {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  height: 200px;
-  transition: transform 0.3s ease;
-}
-
-.game-card:hover {
-  transform: scale(1.03);
-}
-
-.game-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: filter 0.3s ease;
-}
-
-.game-card:hover img {
-  filter: blur(4px) brightness(0.7);
-}
-
-.game-card-title {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-
-.game-card:hover .game-card-title {
-  opacity: 1;
-}
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-   #particles-js {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 300%;
-      z-index: -1; /* Place behind all content */
-    }
-
-    
-  </style>
+ 
 </head>
   
 <body>
