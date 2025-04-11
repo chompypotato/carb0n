@@ -66,14 +66,19 @@ body {
   transform: translateX(-50%);
   width: 100%;
   padding: 10px;
-  color: white;
   font-weight: bold;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   opacity: 0;
   transition: opacity 0.3s ease;
+  background: linear-gradient(45deg, #f70069, #4b0055); /* gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
 
 
 .game-card:hover .game-card-title {
