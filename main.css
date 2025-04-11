@@ -28,19 +28,23 @@ body {
 }
 
     .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center; /* Centers the grid if there's extra space */
+  gap: 20px;
+  margin-top: 30px;
+}
+
     .game-card {
-  aspect-ratio: 1 / 1; /* makes it a square */
-  width: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative; /* Needed for title positioning */
 }
+
 
 
 .game-card:hover {
