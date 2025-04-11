@@ -11,12 +11,10 @@ body {
 }
 
     .logo {
-      .centered-image {
-  display: block;
-  margin: 20px auto; /* Centers horizontally */
-  max-width: 100%;
-  height: auto;
-}
+    display: block;
+    margin: auto; 
+    max-width: 100%;
+    height: auto;
     }
 
     h1 {
