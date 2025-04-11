@@ -1,7 +1,6 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 10px;
 }
 
 body {
@@ -36,7 +35,7 @@ body {
     }
     .game-card {
   aspect-ratio: 1 / 1; /* makes it a square */
-  width: 75px;
+  width: 150px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
