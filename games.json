@@ -188,6 +188,21 @@
   "title": "Blumgi Racers",
     "image": "https://mt3k12.laviewddns.com/images/games/blumgiracers-min.jpg",
     "link": "https://mt3k12.laviewddns.com/assets/allgames/blumgiracers/blumgi-racers/" 
+  },
+  {
+  "title": "Blumgi Slime",
+    "image": "https://mt3k12.laviewddns.com/images/games/bumbslime-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/BlumgiSlime" 
+  },
+  {
+  "title": "Capybara Clicker",
+    "image": "https://mt3k12.laviewddns.com/images/games/cappybaraclicker-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/capybara-clicker/index.html" 
+  },
+  {
+  "title": "Cell Machine",
+    "image": "https://mt3k12.laviewddns.com/images/games/cell-machine-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/cellmachine" 
   }
   
 ]
