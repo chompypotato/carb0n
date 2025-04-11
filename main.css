@@ -20,7 +20,7 @@ body {
     h1 {
   text-align: center;
   font-size: 75px;
-  background: linear-gradient(45deg, #ff69b4, #800080); /* Pink to Purple diagonally */
+  background: linear-gradient(45deg, ##f70069, ##4b0055); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
