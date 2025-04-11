@@ -113,7 +113,23 @@
     "title": "Bacon May Die",
     "image": "https://mt3k12.laviewddns.com/images/games/baconmaydie-min.jpg",
     "link": "https://mt3k12.laviewddns.com/assets/allgames/baconmaydie/"
+  },
+  {
+    "title": "Bad Ice Cream",
+    "image": "https://mt3k12.laviewddns.com/images/games/badicecream-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/badicecream/" 
+  },
+  {
+    "title": "Bad Ice Cream 2",
+    "image": "https://mt3k12.laviewddns.com/images/games/badicecream2-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/badicecream2/" 
+  },
+  {
+    "title": "Bad Ice Cream 3",
+    "image": "https://mt3k12.laviewddns.com/images/games/badicecream3-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/badicecream3/" 
   }
+  
   
   
 ]
