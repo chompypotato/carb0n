@@ -25,6 +25,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  z-index: 1;
 }
 
     .game-grid {
