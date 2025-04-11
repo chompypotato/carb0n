@@ -10,7 +10,15 @@ body {
   margin: 0;
 }
 
-    
+    .logo {
+      .centered-image {
+  display: block;
+  margin: 20px auto; /* Centers horizontally */
+  max-width: 100%;
+  height: auto;
+}
+    }
+
     h1 {
       text-align: center;
       font-size: 75px;
