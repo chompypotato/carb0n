@@ -35,7 +35,7 @@ body {
     }
     .game-card {
   aspect-ratio: 1 / 1; /* makes it a square */
-  width: 150px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
