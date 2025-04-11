@@ -18,10 +18,15 @@ body {
     }
 
     h1 {
-      text-align: center;
-      font-size: 75px;
-      color: grey;
-    }
+  text-align: center;
+  font-size: 75px;
+  background: linear-gradient(45deg, #ff69b4, #800080); /* Pink to Purple diagonally */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
     .game-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
