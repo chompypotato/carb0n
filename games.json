@@ -213,6 +213,22 @@
   "title": "Cell Machine",
     "image": "https://mt3k12.laviewddns.com/images/games/cell-machine-min.png",
     "link": "https://mt3k12.laviewddns.com/assets/allgames/cellmachine" 
+  },
+  {
+  "title": "Cell Machine",
+    "image": "https://mt3k12.laviewddns.com/images/games/chess-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/chess/" 
+  },
+  {
+  "title": "Choppy Orc",
+    "image": "https://mt3k12.laviewddns.com/images/games/choppyorc-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/choppyorc/" 
+  },
+  {
+  "title": "Circloo",
+    "image": "https://mt3k12.laviewddns.com/images/games/circloo-min.png",
+    "link": "https://mt3k12.laviewddns.com/assets/allgames/circloo/" 
   }
+  
   
 ]
