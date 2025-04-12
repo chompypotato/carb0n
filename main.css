@@ -94,6 +94,6 @@ body {
       top: 0;
       left: 0;
       width: 100vw;
-      height: 300%;
+      height: 500%;
       z-index: -1; /* Place behind all content */
     }
