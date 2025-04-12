@@ -253,7 +253,31 @@
   "title": "Crazy Bikes",
     "image": "https://verynice39.speedbike.com.ar/images/games/crazybikes-min.png",
     "link": "https://verynice39.speedbike.com.ar/assets/allgames/crazy-bikes/" 
+  },
+  {
+  "title": "Crazy Cars",
+    "image": "https://verynice39.speedbike.com.ar/images/games/crazycars-min.png",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/crazy-cars/" 
+  },
+  {
+  "title": "Crossy Road",
+    "image": "https://verynice39.speedbike.com.ar/images/games/crossyroad-min.png",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/crossy/" 
+  },
+  {
+  "title": "CSGO Clicker",
+    "image": "https://avatars.githubusercontent.com/u/39322951?s=280&v=4",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/csgoclicker/" 
+  },
+  {
+  "title": "Cubefield",
+    "image": "https://verynice39.speedbike.com.ar/images/games/cubefeild-min.jpg",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/cubefield/" 
+  },
+  {
+  "title": "Cut The Rope",
+    "image": "https://verynice39.speedbike.com.ar/images/games/cuttherope-min.png",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/cuttherope/" 
   }
-  
   
 ]
