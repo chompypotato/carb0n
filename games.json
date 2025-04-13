@@ -333,6 +333,12 @@
   "title": "Doodle Jump",
     "image": "https://verynice39.speedbike.com.ar/images/games/doodlejump-min.png",
     "link": "https://verynice39.speedbike.com.ar/assets/allgames/doodle-jump-new/" 
+  },
+  {
+  "title": "Doom",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNysJ1Oyr3xfQ1LuWOFuo1gHK_XxQxmpBEOg&s",
+    "link": "https://diekmann.github.io/wasm-fizzbuzz/doom/" 
   }
+  
   
 ]
