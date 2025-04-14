@@ -395,9 +395,19 @@
     "link": "https://404gamesgithub.github.io/ducklife6/" 
   },
   {
-  "title": "Dune",
+  "title": "Dune!",
     "image": "https://verynice39.speedbike.com.ar/images/games/dune-min.jpg",
     "link": "https://verynice39.speedbike.com.ar/assets/allgames/dune/" 
+  },
+  {
+  "title": "Eggy Car",
+    "image": "https://verynice39.speedbike.com.ar/images/games/eggycar-min.jpg",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/EggyCar/" 
+  },
+  {
+  "title": "Elastic Man",
+    "image": "https://ubg77.github.io/updatefaqs/elasticman/logo.png",
+    "link": "https://ubg77.github.io/updatefaqs/elasticman/" 
   }
   
   
