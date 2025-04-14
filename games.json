@@ -463,7 +463,24 @@
   "title": "Fruit Merge",
     "image": "https://verynice39.speedbike.com.ar/images/games/fruitmerge-min.png",
     "link": "https://verynice39.speedbike.com.ar/assets/allgames/fruitmerge/Watermelon Fruit 2048/index.html/" 
+  },
+  {
+  "title": "Fruit Ninja",
+    "image": "https://verynice39.speedbike.com.ar/images/games/fruitninja-min.jpg",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/fruitninja" 
+  },
+  {
+  "title": "Funny Mad Racing",
+    "image": "https://verynice39.speedbike.com.ar/images/games/funnymadracing-min.jpg",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/funnymadracing" 
+  },
+  {
+  "title": "Funny Shooter 2",
+    "image": "https://verynice39.speedbike.com.ar/images/games/funnyshooter2-min.png",
+    "link": "https://verynice39.speedbike.com.ar/assets/allgames/FunnyShooter2" 
   }
+  
+  
   
   
 ]
