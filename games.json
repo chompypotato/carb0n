@@ -606,8 +606,13 @@
    },
    {
    "title": "Idle dice",
-     "image": "https://verynice39.speedbike.com.ar/images/games/idledices-min.jpg",
+     "image": "https://verynice39.speedbike.com.ar/images/games/idledices.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/idledices/" 
+   },
+   {
+   "title": "Impossible Quiz",
+     "image": "https://verynice39.speedbike.com.ar/images/games/impquiz-min.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/impossiblequiz/" 
    }
   
  
