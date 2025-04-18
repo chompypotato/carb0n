@@ -63,18 +63,7 @@ function displayGames(games) {
 
     gameGrid.appendChild(card);
   });
-   resizeParticles();
 }
 
-// Resize particles background to fit content
-const resizeParticles = () => {
-  const particlesDiv = document.getElementById('particles-js');
-  const bodyHeight = document.body.scrollHeight;
-  particlesDiv.style.height = bodyHeight + 'px';
-};
 
-
-
-// Optional: re-run on window resize or font load
-window.addEventListener('resize', resizeParticles);
 
