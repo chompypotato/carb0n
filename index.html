@@ -6,7 +6,7 @@
   <title>Carb0n</title>
   <link rel="icon" type="image/x-icon" href="carbon.png">
   <link rel="stylesheet" href="main.css">
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--fun-->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
   
 <body>
@@ -23,38 +23,41 @@
   <script src="js/load.js"></script>
 
   <script>
-    let particlesInstance;
+    let particlesInstance = null;
 
     // Initialize particles.js
     function initializeParticles() {
-      particlesJS('particles-js', {
-        particles: {
-          number: { value: 75 },
-          color: { value: "#5c5c5c" },
-          shape: { type: "circle" },
-          opacity: { value: 1 },
-          size: { value: 1.5 },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#808080",
-            opacity: 0.4,
-            width: 1,
+      if (!particlesInstance) {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 75 },
+            color: { value: "#5c5c5c" },
+            shape: { type: "circle" },
+            opacity: { value: 1 },
+            size: { value: 1.5 },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#808080",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 6,
+            },
           },
-          move: {
-            enable: true,
-            speed: 6,
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onhover: { enable: true, mode: "grab" },
+              onclick: { enable: true, mode: "push" },
+            },
           },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: { enable: true, mode: "grab" },
-            onclick: { enable: true, mode: "push" },
-          },
-        },
-        retina_detect: true,
-      });
+          retina_detect: true,
+        });
+        particlesInstance = true;  // Mark as initialized
+      }
     }
 
     // IntersectionObserver to detect when particles are in the viewport
@@ -63,14 +66,10 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // Particles are in view — start animation
-          if (!particlesInstance) {
-            initializeParticles();
-            particlesInstance = true;  // Mark as initialized
-          }
+          initializeParticles();
         } else {
           // Particles are out of view — stop animation
-          particlesJS('particles-js', 'stop');  // Stops particles animation
-          particlesInstance = false;  // Mark as stopped
+          stopParticles();
         }
       });
     }, { threshold: 0.1 });  // Trigger when 10% of the particles are in view
@@ -78,11 +77,17 @@
     // Start observing the particles background
     observer.observe(particlesDiv);
 
+    // Function to stop particles (more efficient than re-initializing)
+    function stopParticles() {
+      const particlesDiv = document.getElementById('particles-js');
+      particlesDiv.innerHTML = ''; // Clear the particles container to stop them
+      particlesInstance = null;    // Mark as stopped
+    }
+
     // Initialize particles on page load if it's already in view
     window.addEventListener('load', () => {
       if (particlesDiv.getBoundingClientRect().top <= window.innerHeight) {
         initializeParticles();
-        particlesInstance = true;
       }
     });
   </script>
