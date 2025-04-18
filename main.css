@@ -103,7 +103,7 @@ h3 {
       top: 0;
       left: 0;
       width: 100vw;
-      height: 500%;
+      height: 800%;
       z-index: -1; /* Place behind all content */
     }
 
