@@ -98,14 +98,16 @@ h3 {
       text-decoration: none;
       color: inherit;
     }
-  #particles-js {
+ #particles-js {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 1000%;
   z-index: -1;
-  pointer-events: none;
+  pointer-events: none; 
 }
+
 
 
 
@@ -132,11 +134,4 @@ h3 {
   border: 2px solid #f70069;
   box-shadow: 0 0 12px #f70069;
 }
-
-.content {
-  position: relative;
-  z-index: 1;
-  padding-bottom: 100px; 
-}
-
 
