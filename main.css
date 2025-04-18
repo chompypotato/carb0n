@@ -106,3 +106,28 @@ h3 {
       height: 500%;
       z-index: -1; /* Place behind all content */
     }
+
+#searchInput {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 300px;
+  font-size: 16px;
+  font-family: 'Lucida Console', monospace;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  background-clip: padding-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(247, 0, 105, 0.4);
+}
+
+#searchInput:focus {
+  border: 2px solid #f70069;
+  box-shadow: 0 0 12px #f70069;
+}
+
