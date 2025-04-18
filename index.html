@@ -7,52 +7,84 @@
   <link rel="icon" type="image/x-icon" href="carbon.png">
   <link rel="stylesheet" href="main.css">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--fun-->
-
- 
 </head>
   
 <body>
-<div id="particles-js"></div>
+  <!-- Particles background -->
+  <div id="particles-js"></div>
 
-  
-    <h1>Carb0n</h1>
-    <h3>All games, game sites, and images embedded on this site are copyright to their respective owners.</h3>
-    <img class="logo" src="carbon.png" alt="logo">
-    <input type="text" id="searchInput" placeholder="Search games..." />
-    <div class="game-grid" id="gameGrid">Loading games...</div>
- 
+  <!-- Main Content -->
+  <h1>Carb0n</h1>
+  <h3>All games, game sites, and images embedded on this site are copyright to their respective owners.</h3>
+  <img class="logo" src="carbon.png" alt="logo">
+  <input type="text" id="searchInput" placeholder="Search games..." />
+  <div class="game-grid" id="gameGrid">Loading games...</div>
 
   <script src="js/load.js"></script>
+
   <script>
-particlesJS('particles-js', {
-      particles: {
-        number: { value: 75 },
-        color: { value: "#5c5c5c" },
-        shape: { type: "circle" },
-        opacity: { value: 1},
-        size: { value: 1.5 },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#808080",
-          opacity: 0.4,
-          width: 1,
+    let particlesInstance;
+
+    // Initialize particles.js
+    function initializeParticles() {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 75 },
+          color: { value: "#5c5c5c" },
+          shape: { type: "circle" },
+          opacity: { value: 1 },
+          size: { value: 1.5 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#808080",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+          },
         },
-        move: {
-          enable: true,
-          speed: 6,
+        interactivity: {
+          detect_on: "window",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+          },
         },
-      },
-      interactivity: {
-        detect_on: "window",
-        events: {
-          onhover: { enable: true, mode: "grab" },
-          onclick: { enable: true, mode: "push" },
-        },
-      },
-      retina_detect: true,
+        retina_detect: true,
+      });
+    }
+
+    // IntersectionObserver to detect when particles are in the viewport
+    const particlesDiv = document.getElementById('particles-js');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Particles are in view — start animation
+          if (!particlesInstance) {
+            initializeParticles();
+            particlesInstance = true;  // Mark as initialized
+          }
+        } else {
+          // Particles are out of view — stop animation
+          particlesJS('particles-js', 'stop');  // Stops particles animation
+          particlesInstance = false;  // Mark as stopped
+        }
+      });
+    }, { threshold: 0.1 });  // Trigger when 10% of the particles are in view
+
+    // Start observing the particles background
+    observer.observe(particlesDiv);
+
+    // Initialize particles on page load if it's already in view
+    window.addEventListener('load', () => {
+      if (particlesDiv.getBoundingClientRect().top <= window.innerHeight) {
+        initializeParticles();
+        particlesInstance = true;
+      }
     });
-</script>
+  </script>
 </body>
 </html>
-
