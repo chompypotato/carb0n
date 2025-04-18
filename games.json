@@ -80,6 +80,16 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/ageofwar2/"
    },
    {
+     "title": "Among Us Fangame",
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB41IpJZI6eoa3hCcbRiZlDk41_Dc5OYLQZQ&s",
+     "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/amongus/index.html"
+   },
+   {
+     "title": "Aquapark Slides",
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1srNKgET1UoP1ecAdj3gC0Lq8sPXHzmpIA&s",
+     "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/aquaparkslides/index.html"
+   },
+   {
      "title": "Arras.io",
      "image": "https://cdn.glitch.me/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png",
      "link": "https://arrax.io"
@@ -340,6 +350,11 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/dogeminer2/play/" 
    },
    {
+   "title": "Donkey Kong",
+     "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Donkey_Kong_Gameplay.png",
+     "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/donkeykong/index.html" 
+   },
+   {
    "title": "Doodle Jump",
      "image": "https://verynice39.speedbike.com.ar/images/games/doodlejump-min.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/doodle-jump-new/" 
@@ -373,6 +388,11 @@
    "title": "Drive Mad",
      "image": "https://verynice39.speedbike.com.ar/images/games/drivemad-min.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/drive-mad/" 
+   },
+   {
+   "title": "Dr Mario",
+     "image": "https://images.squarespace-cdn.com/content/53fcd5b1e4b0826cfdf767e2/1428447722684-4DKXWQLDKUDSU67F8NJ6/image-asset.jpeg?format=1500w&content-type=image%2Fjpeg",
+     "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/drmario/index.html" 
    },
    {
    "title": "Ducklife",
@@ -565,16 +585,11 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/happywheels/" 
    },
    {
-   "title": "Henry Stickmin: Infiltrating The Airship",
-     "image": "https://verynice39.speedbike.com.ar/images/games/henrystickminairship.png",
-     "link": "https://verynice39.speedbike.com.ar/assets/allgames/henryinfiltratingtheairship/" 
-   },
-   {
    "title": "Henry Stickmin: Breaking The Bank",
      "image": "https://verynice39.speedbike.com.ar/images/games/henrystickminbank.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/henrybreakingthebank/" 
    },
-   {
+     {
    "title": "Henry Stickmin: Escaping The Prision",
      "image": "https://verynice39.speedbike.com.ar/images/games/henrystickminescaping.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/henryescapingtheprison/" 
@@ -583,6 +598,16 @@
    "title": "Henry Stickmin: Fleeing The Complex",
      "image": "https://verynice39.speedbike.com.ar/images/games/henrystickminfleeing.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/henryfleeingthecomplex/" 
+   },
+   {
+   "title": "Henry Stickmin: Infiltrating The Airship",
+     "image": "https://verynice39.speedbike.com.ar/images/games/henrystickminairship.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/henryinfiltratingtheairship/" 
+   },
+   {
+   "title": "Henry Stickmin: Stealing The Diamond",
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBzQfGchWMGx1FX1hqbFLEHP96e6_h0j6EA&s",
+     "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/stealingthediamond/index.html" 
    },
     {
    "title": "HexGL",
