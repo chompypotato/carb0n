@@ -5,6 +5,11 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/1/"
    },
    {
+     "title": "100 Player Pong",
+     "image": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/100ng/100ng.jpg",
+     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/100ng//index.html"
+   },
+   {
      "title": "1 On 1 Soccer",
      "image": "https://verynice39.speedbike.com.ar/images/games/1on1soccer-min.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/1on1soccer/"
@@ -838,6 +843,21 @@
    "title": "Knife Hit",
      "image": "https://verynice39.speedbike.com.ar/images/games/knifehit.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/knifehit/" 
+   },
+   {
+   "title": "Learn To Fly",
+     "image": "https://verynice39.speedbike.com.ar/images/games/learntofly1.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntofly/" 
+   },
+   {
+   "title": "Learn To Fly 2",
+     "image": "https://verynice39.speedbike.com.ar/images/games/learntofly2.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntofly2/" 
+   },
+   {
+   "title": "Learn To Fly 3",
+     "image": "https://verynice39.speedbike.com.ar/images/games/learntofly3.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntofly3/" 
    }
    
  
