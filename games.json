@@ -846,7 +846,7 @@
    },
    {
    "title": "Learn To Fly",
-     "image": "https://verynice39.speedbike.com.ar/images/games/learntofly1.png",
+     "image": "https://verynice39.speedbike.com.ar/images/games/learntofly1.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntofly/" 
    },
    {
@@ -858,6 +858,21 @@
    "title": "Learn To Fly 3",
      "image": "https://verynice39.speedbike.com.ar/images/games/learntofly3.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntofly3/" 
+   },
+   {
+   "title": "Learn To Fly Idle",
+     "image": "https://verynice39.speedbike.com.ar/images/games/learntoflyidle.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/learntoflyidle/" 
+   },
+   {
+   "title": "Level Devil",
+     "image": "https://verynice39.speedbike.com.ar/images/games/leveldevil-min.jpg",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/leveldevil/" 
+   },
+   {
+   "title": "Little Alchemy",
+     "image": "https://verynice39.speedbike.com.ar/images/games/littlealc1.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/littlealc/" 
    }
    
  
