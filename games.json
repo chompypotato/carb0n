@@ -930,10 +930,21 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/murder/" 
    },
    {
+   "title": "Neon Square Resurgence",
+     "image": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/nsresurgence/neon.png",
+     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/nsresurgence/index.html" 
+   },
+   {
    "title": "Neon Swing",
      "image": "https://verynice39.speedbike.com.ar/images/games/neonswing-min.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/neonswing/" 
+   },
+   {
+   "title": "n-gon",
+     "image": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/n-gon/bot.png",
+     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/n-gon/index.html" 
    }
+   
  
  
  
