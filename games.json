@@ -2,12 +2,12 @@
    {
      "title": "1",
      "image": "https://verynice39.speedbike.com.ar/images/games/1-min.png",
-     "link": "https://verynice39.speedbike.com.ar/assets/allgames/1/"
+     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/1/index.html"
    },
    {
      "title": "100 Player Pong",
      "image": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/100ng/100ng.jpg",
-     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/100ng//index.html"
+     "link": "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/100ng/index.html"
    },
    {
      "title": "1 On 1 Soccer",
@@ -883,6 +883,41 @@
    "title": "Little Alchemy",
      "image": "https://verynice39.speedbike.com.ar/images/games/littlealc1.png",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/littlealchemy/" 
+   },
+   {
+   "title": "Madalin Stunt Cars 3",
+     "image": "https://verynice39.speedbike.com.ar/images/games/madalin3-min.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/madalin-stunt-cars-3/" 
+   },
+   {
+   "title": "Monkey Mart",
+     "image": "https://verynice39.speedbike.com.ar/images/games/monkeymart-min.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/monkeymart/monkeymart.html" 
+   },
+   {
+   "title": "Moto X3M",
+     "image": "https://verynice39.speedbike.com.ar/images/games/motox3m-min.jpg",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/moto-x3m/" 
+   },
+   {
+   "title": "Moto X3M 3",
+     "image": "https://verynice39.speedbike.com.ar/images/games/motox3m3-min.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/motox3m3/" 
+   },
+   {
+   "title": "Moto X3M Pool Party",
+     "image": "https://verynice39.speedbike.com.ar/images/games/motox3mpoolparty.jpg",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/motox3mpool/" 
+   },
+   {
+   "title": "Moto X3M Spooky",
+     "image": "https://verynice39.speedbike.com.ar/images/games/motox3mspooky.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/motox3mspooky/" 
+   },
+   {
+   "title": "Moto X3M Winter",
+     "image": "https://verynice39.speedbike.com.ar/images/games/motox3mwinter.jpeg",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/motox3mwinter/" 
    }
    
  
