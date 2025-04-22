@@ -992,7 +992,12 @@
    {
    "title": "Papa's Pizzeria",
      "image": "https://verynice39.speedbike.com.ar/images/papas/papas-pizzeria-min.png",
-     "link": "https://verynice39.speedbike.com.ar/papas-play/pizzeria/index.html" 
+     "link": "https://verynice39.speedbike.com.ar/papas-play/pizzaeria/index.html" 
+   },
+   {
+   "title": "Papa's Pastaria",
+     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-pastaria-min.png",
+     "link": "https://verynice39.speedbike.com.ar/papas-play/pastaria/index.html" 
    }
  
  
