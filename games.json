@@ -976,10 +976,24 @@
    },
    {
    "title": "Papa's Taco Mia",
-     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-tacomia-min.png",
+     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-taco-mia-min.png",
      "link": "https://verynice39.speedbike.com.ar/papas-play/tacomia/index.html" 
+   },
+   {
+   "title": "Papa's Sushiria",
+     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-sushiria-min.png",
+     "link": "https://verynice39.speedbike.com.ar/papas-play/sushiria/index.html" 
+   },
+   {
+   "title": "Papa's Scooperia",
+     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-scooperia-min.png",
+     "link": "https://verynice39.speedbike.com.ar/papas-play/scooperia/index.html" 
+   },
+   {
+   "title": "Papa's Pizzeria",
+     "image": "https://verynice39.speedbike.com.ar/images/papas/papas-pizzeria-min.png",
+     "link": "https://verynice39.speedbike.com.ar/papas-play/pizzeria/index.html" 
    }
-   
  
  
  
