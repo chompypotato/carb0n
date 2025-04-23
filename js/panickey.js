@@ -3,7 +3,7 @@ function openSite() {
 }
 
 document.addEventListener("keydown", function(event) {
-  if (event.key === "`") { (`)
+  if (event.key === "`") { 
     openSite();
   }
 });
