@@ -3,7 +3,7 @@ function openSite() {
 }
 
 document.addEventListener("keydown", function(event) {
-  if (event.key === "`") { // The backtick key (`)
+  if (event.key === "`") { (`)
     openSite();
   }
 });
