@@ -1190,9 +1190,19 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/retrobowl/" 
    },
    {
-   "title": "Retro Bowl Collage",
+   "title": "Retro Bowl College",
      "image": "https://verynice39.speedbike.com.ar/images/games/rbcollege-min.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/retrobowlcollege/" 
+   },
+   {
+   "title": "Redball 4",
+     "image": "https://verynice39.speedbike.com.ar/images/games/redball4-min.jpg",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/redball4/" 
+   },
+   {
+   "title": "Red vs Bluez",
+     "image": "https://verynice39.speedbike.com.ar/images/games/redvsblue-min.png",
+     "link": "https://nyx-v1.vercel.app/active/games/redvsbluez/" 
    }
  
  
