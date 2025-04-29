@@ -1281,8 +1281,13 @@
    },
    {
    "title": "Slope Ball",
-     "image": "https://verynice39.speedbike.com.ar/images/games/slopeball-min.jpg",
+     "image": "https://verynice39.speedbike.com.ar/images/games/slopeball.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/slopeball/" 
+   },
+   {
+   "title": "Slowroads",
+     "image": "https://verynice39.speedbike.com.ar/images/games/slowroads-min.png",
+     "link": "https://verynice39.speedbike.com.ar/assets/allgames/slowroads/main/index.html" 
    }
  
  
