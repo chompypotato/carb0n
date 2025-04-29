@@ -58,7 +58,7 @@ function displayGames(games) {
 
         const link = win.document.createElement('link');
         link.rel = 'icon';
-        link.href = 'blank.ico';
+        link.href = 'go/blank.ico';
         win.document.head.appendChild(link);
       } catch (e) {
         alert("Please allow popups and redirects for this site for the game to open.");
