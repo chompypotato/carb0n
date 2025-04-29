@@ -3,92 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carb0n</title>
-  <link rel="icon" type="image/x-icon" href="carbon.png">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="https://canvas.instructure.com/favicon.ico">
   <link rel="stylesheet" href="main.css">
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</head>
-  
-<body>
-  <div id="particles-js"></div>
-
-  <h1>Carb0n</h1>
-  <h3>All games, game sites, and images embedded on this site are copyright to their respective owners.</h3>
-  <img class="logo" src="carbon.png" alt="logo">
-  <input type="text" id="searchInput" placeholder="Search games..." />
-  <div class="game-grid" id="gameGrid">Loading games...</div>
-
-  <script src="js/load.js"></script>
-  <script src="js/panickey.js"></script>
-
   <script>
-    let particlesInstance = null;
-
-    // Initialize particles.js
-    function initializeParticles() {
-      if (!particlesInstance) {
-        particlesJS('particles-js', {
-          particles: {
-            number: { value: 50 },
-            color: { value: "#5c5c5c" },
-            shape: { type: "circle" },
-            opacity: { value: 1 },
-            size: { value: 1.5 },
-            line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#808080",
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 6,
-            },
-          },
-          interactivity: {
-            detect_on: "window",
-            events: {
-              onhover: { enable: true, mode: "grab" },
-              onclick: { enable: true, mode: "push" },
-            },
-          },
-          retina_detect: true,
-        });
-        particlesInstance = true;  // Mark as initialized
-      }
-    }
-
-    // IntersectionObserver to detect when particles are in the viewport
-    const particlesDiv = document.getElementById('particles-js');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Particles are in view — start animation
-          initializeParticles();
-        } else {
-          // Particles are out of view — stop animation
-          stopParticles();
+    function openCloaker() {
+      try {
+        var win = window.open('about:blank', '_blank');
+        if (!win) {
+          throw new Error("Popup blocked");
         }
-      });
-    }, { threshold: 0.1 });  // Trigger when 10% of the particles are in view
 
-    // Start observing the particles background
-    observer.observe(particlesDiv);
+        var iframe = win.document.createElement('iframe');
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = 'go/'; 
 
-    // Function to stop particles (more efficient than re-initializing)
-    function stopParticles() {
-      const particlesDiv = document.getElementById('particles-js');
-      particlesDiv.innerHTML = ''; // Clear the particles container to stop them
-      particlesInstance = null;    // Mark as stopped
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        win.document.body.appendChild(iframe);
+
+        win.document.title = '\u200B'; // zero-width space
+        var link = win.document.createElement('link');
+        link.rel = 'icon';
+        link.href = 'blankfavicon.ico';
+        win.document.head.appendChild(link);
+
+        window.location.replace("https://kahoot.it");
+      } catch (e) {
+        alert("Please allow popups and redirects for this site for the about:blank to open.");
+      }
     }
 
-    // Initialize particles on page load if it's already in view
-    window.addEventListener('load', () => {
-      if (particlesDiv.getBoundingClientRect().top <= window.innerHeight) {
-        initializeParticles();
-      }
-    });
+    
+    window.onload = openCloaker;
   </script>
+</head>
+<body>
+  <h1>Carb0n</h1>
+  <h3>Cloaking Carb0n...</h3>
+  <img class="logo" src="carbon.png" alt="logo">
 </body>
 </html>
