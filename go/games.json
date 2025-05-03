@@ -427,7 +427,7 @@
    {
    "title": "Diggy",
      "image": "https://flashmuseum.org/wp-content/uploads/2023/06/Diggy_logo.png",
-     "link": "/local/diggy/index.html" 
+     "link": "local/diggy/index.html" 
    },
    {
    "title": "Dogeminer",
