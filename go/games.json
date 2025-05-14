@@ -145,6 +145,11 @@
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/AwesomeTanks2/"
    },
    {
+     "title": "Babel Tower",
+     "image": "https://cdn.phaser.io/news/2021/03/babel-tower.png",
+     "link": "local/babel-tower/index.html"
+   },
+   {
      "title": "Backrooms",
      "image": "https://verynice39.speedbike.com.ar/images/games/backrooms-min.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/backrooms/"
@@ -253,6 +258,11 @@
      "title": "Bloons TD 4",
      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBoS7tu-NWKVgAUQcTLTwFnZBjBz3CyIq25w&s",
      "link": "https://heheheha12345678.github.io/CoolScience.github.io/games/btd/btd4/index.html" 
+   },
+   {
+     "title": "Blocky Snakes",
+     "image": "https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/cc12ee8c7a5161d8bac0ba19f46e00a0.png",
+     "link": "local/blocky-snakes/index.html" 
    },
    {
      "title": "Bloxors",
@@ -803,6 +813,11 @@
    "title": "Horde Killer: You VS 100",
      "image": "https://verynice39.speedbike.com.ar/images/games/youvs100-min.jpg",
      "link": "https://verynice39.speedbike.com.ar/assets/allgames/hordekilleryouvs100/" 
+   },
+   {
+     "title": "Hole.io",
+     "image": "https://store-images.s-microsoft.com/image/apps.2546.13913341256106203.45d1d424-36cd-4359-b755-fc0370f95cb4.944a9140-cf95-46f0-9cd1-46354c0aebb2?q=90&w=177&h=177",
+     "link": "local/hole-io/index.html" 
    },
    {
    "title": "Ice Climber",
