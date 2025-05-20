@@ -153,4 +153,14 @@ h3 {
   background: linear-gradient(180deg, #ff147e, #6d007a);
 }
 
+ .counter {
+  text-align: center;
+  font-size: 16px;
+  background: linear-gradient(45deg, #f70069, #4b0055); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  z-index: 1;
+}
 
