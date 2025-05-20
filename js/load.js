@@ -27,6 +27,7 @@ function sortGamesAlphabetically(games) {
 
 function displayGames(games) {
   const gameGrid = document.getElementById('gameGrid');
+  const gameCounter = document.getElementById('gameCounter'); 
   gameGrid.innerHTML = '';
 
   games.forEach(game => {
@@ -67,4 +68,8 @@ function displayGames(games) {
 
     gameGrid.appendChild(card);
   });
+
+  if (gameCounter) {
+    gameCounter.textContent = `Games found: ${games.length}`;
+  }
 }
