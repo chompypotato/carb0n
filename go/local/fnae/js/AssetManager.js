@@ -109,22 +109,8 @@ class AssetManager {
     }
 
    getBasePath() {
-    // Use the base tag href if it exists
-    const baseTag = document.querySelector('base');
-    if (baseTag && baseTag.href) {
-        return baseTag.href; // Already absolute
-    }
     
-    // Fallback: derive from current script location
-    const scripts = document.querySelectorAll('script[src]');
-    for (const script of scripts) {
-        if (script.src.includes('/js/')) {
-            return script.src.split('/js/')[0] + '/';
-        }
-    }
-    
-    // Last resort fallback
-    return './';
+    return '/';
 }
 
     loadImage(src) {
