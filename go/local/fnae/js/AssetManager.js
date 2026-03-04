@@ -108,15 +108,24 @@ class AssetManager {
         this.loaded = true;
     }
 
-    getBasePath() {
-        // 检查是否在 iframe 中
-        const currentPath = window.location.pathname;
-        if (currentPath.includes('/FNAE-HTML5-1.2.3/')) {
-            return '/FNAE-HTML5-1.2.3/';
-        }
-        // 本地开发环境
-        return './';
+   getBasePath() {
+    // Use the base tag href if it exists
+    const baseTag = document.querySelector('base');
+    if (baseTag && baseTag.href) {
+        return baseTag.href; // Already absolute
     }
+    
+    // Fallback: derive from current script location
+    const scripts = document.querySelectorAll('script[src]');
+    for (const script of scripts) {
+        if (script.src.includes('/js/')) {
+            return script.src.split('/js/')[0] + '/';
+        }
+    }
+    
+    // Last resort fallback
+    return './';
+}
 
     loadImage(src) {
         return new Promise((resolve, reject) => {
