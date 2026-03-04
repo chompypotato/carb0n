@@ -108,9 +108,12 @@ class AssetManager {
         this.loaded = true;
     }
 
-   getBasePath() {
-    
-    return '/';
+ getBasePath() {
+    const scriptTag = document.querySelector('script[src*="AssetManager"]');
+    if (scriptTag) {
+        return scriptTag.src.replace('js/AssetManager.js', '');
+    }
+    return '../';
 }
 
     loadImage(src) {
